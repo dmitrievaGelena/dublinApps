@@ -1,0 +1,30 @@
+@mixin light {
+    font-weight: 300;
+    font-family: "Colaborate-Light", sans-serif;
+}
+@mixin ChunkFive{
+    font-family: "ChunkFive Ex Regular", sans-serif;
+    font-weight: 700;
+}
+@mixin alexandriaFLF{
+    font-family: "AlexandriaFLF", sans-serif;
+    font-weight: 300;
+}
+@mixin AalexandriaFLFBold{
+    font-family: "AlexandriaFLF-Bold", sans-serif;
+    font-weight: 700;
+}
+@mixin colaborateLight{
+    font-family: "Colaborate-Light", sans-serif;
+    font-weight: 300;
+}
+@mixin colaborateThin {
+    font-family: "colaborate-thin", sans-serif;
+    font-weight: 100;
+}
+@mixin openSans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+$text: #161628;
+$grey: #e7e8ea;
