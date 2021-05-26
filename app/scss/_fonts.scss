@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Colaborate-Bold", sans-serif;
+    src: url("../fonts/Colaborate-Bold.woff2") format("woff2"), 
+    url("../fonts/Colaborate-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Colaborate-Light", sans-serif;
+    src: url("../fonts/Colaborate-Light.woff2") format("woff2"), 
+    url("../fonts/Colaborate-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Colaborate-Regular", sans-serif;
+    src: url("../fonts/Colaborate-Regular.woff2") format("woff2"), 
+    url("../fonts/Colaborate-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AlexandriaFLF", sans-serif;
+    src: url("../fonts/alexandria/AlexandriaFLF.woff") format("woff2"), 
+    url("../fonts/alexandria/AlexandriaFLF.woff2") format("woff");
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "AlexandriaFLF-Bold", sans-serif;
+    src: url("../fonts/alexandria/AlexandriaFLF-Bold.woff2") format("woff2"), 
+    url("../fonts/alexandria/AlexandriaFLF-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
