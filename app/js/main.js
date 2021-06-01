@@ -13,6 +13,15 @@ $(function () {
     prevArrow: '<button class="slick-arrow next-array"><img src="img/header/right.png" alt=""></button>',
     nextArrow: '<button class="slick-arrow prev-array"><img src="img/header/left.png" alt=""></button>',
   });
+  $('.application__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<button class="slick-arrow next-arrow"><img src="img/header/next.png" alt=""></button>',
+    nextArrow: '<button class="slick-arrow prev-arrow"><img src="img/header/prev.png" alt=""></button>',
+  });
+    
+
 
 
   const acc = document.getElementsByClassName("accordion");
@@ -30,5 +39,12 @@ $(function () {
       }
     });
   }
+
+  $(".tabs_content-item").not(":first").hide();
+  $(".product__inner-tabs .tab").click(function () {
+      $(".product__inner-tabs .tab").removeClass("active-tab").eq($(this).index()).addClass("active-tab");
+      $(".product__inner-tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+      $(".tabs_content-item").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("active-tab");
 
 });

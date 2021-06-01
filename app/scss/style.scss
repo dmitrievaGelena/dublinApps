@@ -4,6 +4,7 @@
     @import 'fonts';
     @import 'global';
 
+    //start header
     .header {
         &-bg {
             background: rgb(28, 28, 47);
@@ -208,6 +209,9 @@
         }
     }
 
+    //end header
+
+    //start app
     .app {
         &-items {
             padding: 40px 0;
@@ -248,6 +252,10 @@
             }
         }
     }
+
+    //end app
+
+    //start quote
 
     .quote {
         padding-bottom: 40px;
@@ -314,6 +322,9 @@
         left: 70px;
     }
 
+    //end quote
+
+    //start many
     .many {
         &__inner {
             padding-bottom: 30px;
@@ -525,8 +536,9 @@
         color: #fff;
         max-width: 380px;
         width: 100%;
-        form{
-            input{
+
+        form {
+            input {
                 margin-right: 15px;
             }
         }
@@ -631,16 +643,243 @@
                 max-width: 200px;
                 height: 100px;
             }
-            input{
+
+            input {
                 margin-bottom: 4px;
             }
         }
-        button{
+
+        button {
             margin-top: 15px;
             position: absolute;
             right: 0;
         }
-        .footer-btn{
+
+        .footer-btn {
             width: 80px;
         }
     }
+
+    //end many
+
+    //start application
+    .application {
+        &__inner {
+            background-color: #e7e8ea;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+
+            &-box {
+                min-height: 100px;
+                background-color: #d7d8da;
+                border-bottom: 1px solid #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 30px;
+                border-radius: 5px 5px 0px 0px;
+                -webkit-border-radius: 5px 5px 0px 0px;
+                -moz-border-radius: 5px 5px 0px 0px;
+                -ms-border-radius: 5px 5px 0px 0px;
+                -o-border-radius: 5px 5px 0px 0px;
+            }
+
+            &-search {
+                form {
+                    input {
+                        border: 2px solid #d1d1d1;
+                        padding: 12px 10px 12px 30px;
+                        outline: none;
+                        border-radius: 30px;
+                        -webkit-border-radius: 30px;
+                        -moz-border-radius: 30px;
+                        -ms-border-radius: 30px;
+                        -o-border-radius: 30px;
+                        background-image: url(../img/icon/search.svg);
+                        background-repeat: no-repeat;
+                        background-position: 5% 50%, 100% 100%;
+
+                        &::placeholder {
+                            font-size: 13px;
+                            color: #bfbfbf;
+                        }
+                    }
+                }
+            }
+
+            &-slider {
+
+                .next-arrow,
+                .prev-arrow {
+                    position: absolute;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    top: 50%;
+                    cursor: pointer;
+                    transform: translate(0, -50%);
+                    -webkit-transform: translate(0, -50%);
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    background-color: #545462;
+                    margin-top: -20px;
+                }
+
+                .next-arrow {
+                    right: -45px;
+                    z-index: 99;
+                }
+
+                .prev-arrow {
+                    left: -45px;
+                }
+            }
+
+            &-item {
+                flex-basis: calc(33.3% - 30px);
+                margin-left: 30px;
+                text-align: left;
+            }
+
+            .many__inner-title {
+                text-align: left;
+                font-size: 25px;
+            }
+
+            &-title {
+                margin: 0px 0px 25px 8px;
+            }
+
+            .header-link {
+                width: 130px;
+                padding: 7px 10px;
+            }
+
+            &-link {
+                margin-left: 14px;
+            }
+        }
+
+        &__slider {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            max-width: 780px;
+            margin-left: -30px;
+            margin: 0 auto;
+            padding: 25px 0 70px;
+        }
+    }
+
+    //end application
+
+    //start product
+    .product {
+        &__inner {
+            padding-bottom: 60px;
+
+            &-tabs {
+                max-width: 780px;
+                margin: 0 auto;
+            }
+
+            .tabs {
+                border-bottom: 1px solid #bfc0c5;
+                margin-bottom: 40px;
+                display: flex;
+
+                .tab {
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 18px;
+                    display: block;
+                    border-radius: 5px 5px 0px 0px;
+                    padding: 8px 20px;
+                    background: rgb(209, 209, 212);
+                    background: linear-gradient(180deg, rgba(209, 209, 212, 1) 0%, rgba(209, 209, 212, 1) 49%, rgba(193, 193, 193, 1) 100%);
+                    -webkit-border-radius: 5px 5px 0px 0px;
+                    -moz-border-radius: 5px 5px 0px 0px;
+                    -ms-border-radius: 5px 5px 0px 0px;
+                    -o-border-radius: 5px 5px 0px 0px;
+
+                    &+.tab {
+                        margin-left: 10px;
+                    }
+                }
+
+                .active {
+                    transition: all .5s;
+                    background: rgb(72, 72, 92);
+                    background: linear-gradient(180deg, rgba(72, 72, 92, 1) 0%, rgba(72, 72, 92, 1) 49%, rgba(55, 55, 72, 1) 100%);
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                    -o-transition: all .5s;
+                }
+            }
+        }
+    }
+
+    // .tab.active-tab{
+    //     .tab{
+    //      
+    //     }
+
+    // }
+
+    .tabs_content {
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .product__item {
+                display: flex;
+                margin-bottom: 60px;
+
+                &-img {
+                    margin-right: 10px;
+                }
+
+                .many__inner-title {
+                    font-size: 22px;
+                }
+
+                .many__inner-subtitle {
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                }
+
+                .application__inner-link {
+                    margin-left: 0;
+
+                    a {
+                        display: block;
+                        width: 95px;
+                        color: #fff;
+                        font-size: 13px;
+                        text-align: center;
+                        padding: 6px 5px;
+                        background: rgb(72, 72, 92);
+                        background: linear-gradient(180deg, rgba(72, 72, 92, 1) 0%, rgba(72, 72, 92, 1) 49%, rgba(55, 55, 72, 1) 100%);
+                        border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    //end product
