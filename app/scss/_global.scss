@@ -27,6 +27,10 @@ li{
     margin: 0;
     padding: 0;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: "Colaborate-Regular", sans-serif;
     font-weight: 400;
@@ -74,4 +78,23 @@ a{
     max-width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+}
+.application__inner-link {
+    margin-left: 0;
+
+    a {
+        display: block;
+        width: 95px;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        padding: 6px 5px;
+        background: rgb(72, 72, 92);
+        background: linear-gradient(180deg, rgba(72, 72, 92, 1) 0%, rgba(72, 72, 92, 1) 49%, rgba(55, 55, 72, 1) 100%);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
 }
