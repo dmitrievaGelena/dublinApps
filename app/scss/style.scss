@@ -877,7 +877,7 @@
 
     //start blog
     .blog {
-        margin-bottom: 15px;
+        padding-bottom: 15px;
 
         &__inner {
             background-color: $grey;
@@ -1169,7 +1169,8 @@
                 color: #828181;
                 line-height: 20px;
             }
-            .many__inner-box{
+
+            .many__inner-box {
                 justify-content: center;
             }
         }
@@ -1181,3 +1182,114 @@
     }
 
     //end play
+
+    //start products
+    .products {
+        .apps__content {
+            padding: 25px 15px 30px 30px;
+        }
+
+        &__item {
+            display: flex;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #d0d9e6;
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &-info {
+                margin-left: 25px;
+
+                .many__inner-info {
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $list;
+                }
+
+                .many__inner-title {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-connect {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                .many__inner-link {
+                    width: 110px;
+                    padding: 6px 8px;
+                }
+            }
+        }
+
+        .pagination {
+            margin: 0 auto;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+
+            a {
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                padding: 0 5px;
+                background: rgb(68, 68, 87);
+                background: linear-gradient(0deg, rgba(68, 68, 87, 1) 0%, rgba(68, 68, 87, 1) 30%, rgba(101, 101, 125, 1) 100%);
+                box-shadow: inset 2px 2px 0px rgba(167, 167, 181, 0.5), 1px 1px 5px rgba(167, 167, 181, 1);
+
+                &+a {
+                    margin-left: 15px;
+                }
+            }
+            .pagination-active{
+                background: rgb(17, 62, 131);
+                background: linear-gradient(0deg, rgba(17, 62, 131, 1) 0%, rgba(17, 62, 131, 1) 30%, rgba(42, 102, 186, 1) 100%);
+            }
+            .first,
+            .last {
+                width: 60px;
+                padding: 7px 5px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    font-family: 'icomoon';
+                }
+            }
+
+            .first {
+                padding-left: 13px;
+
+                &::before {
+                    content: '\e901';
+                    left: 5px;
+                }
+            }
+
+            .last {
+                padding-right: 13px;
+
+                &::before {
+                    content: '\e902';
+                    right: 5px;
+                }
+            }
+        }
+    }
+
+    //end products
