@@ -1,3 +1,11 @@
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+  }
+  
+  @function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+  }
+
 @mixin light {
     font-weight: 300;
     font-family: "Colaborate-Light", sans-serif;
