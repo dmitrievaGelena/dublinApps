@@ -1603,3 +1603,87 @@
     }
 
     //end modal
+
+    //start contacts
+    .contacts{
+        .blog__inner-content{
+            padding: 60px 40px 70px 60px;
+            display: flex;
+        }
+        &__form{
+            width: 400px;
+            border-right: 1px solid #d7d6d7;
+            form{
+                max-width: 340px;
+                input,
+                textarea{
+                    background-color: #eff1f4;
+                    box-shadow: inset 2px 4px 5px rgba(223, 225, 228, .8);
+                    width: 100%;
+                    margin-bottom: 20px;
+                    outline: none;
+                    padding: 10px 30px;
+                    border: 1px solid #cbcbcb;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    &::placeholder{
+                        font-size: 21px;
+                        color: #cbcbcb;
+                    }
+                }
+                textarea{
+                    min-height: 90px;
+                    resize: none;
+                }
+            }
+        }
+        .many__inner-btns{
+            button{
+                margin-left: auto;
+                cursor: pointer;
+            }
+        }
+        &__info{
+            padding-left: 40px;
+            font-size: 17px;
+            line-height: 25px;
+            color: #9d9d9d;
+            &-box{
+                border: 1px solid #d6d7d9;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                background-color: #ebedf0;
+                padding: 10px 20px 30px;
+                margin-bottom: 20px;
+            }
+            .many__inner-title{
+                font-size: 21px;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .many__inner-subtitle{
+
+                span{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
+            &-email{
+                a{
+                    color: #9d9d9d;
+                }
+            }
+            &-phone{
+                a{
+                    color: #9d9d9d;
+                }
+            }
+        }
+    }
+    //end contacts
